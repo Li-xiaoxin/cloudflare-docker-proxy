@@ -5,11 +5,11 @@ addEventListener("fetch", (event) => {
   event.respondWith(handleRequest(event.request));
 });
 
-const dockerHub = "https://registry-1.docker.io";
+const dockerHub = "https://hub.docker.com/";
 
 const routes = {
   // production
-  "docker.1995618.xyz": "https://hub.docker.com/",
+  "docker.1995618.xyz": dockerHub,
   "quay.1995618.xyz": "https://quay.io",
   "gcr.1995618.xyz": "https://gcr.io",
   "k8s-gcr.1995618.xyz": "https://k8s.gcr.io",
